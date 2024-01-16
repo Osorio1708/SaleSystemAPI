@@ -10,7 +10,7 @@ namespace SaleSystem.DTO
     {
         public int? IdProduct { get; set; }
 
-        public string? productDescription { get; set; }
+        public string? ProductDescription { get; set; }
 
         public int? Quantity { get; set; }
 
