@@ -396,3 +396,26 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+data.txt
+
+SaleSystem.API/bin/
+SaleSystem.API/obj/
+
+SaleSystem.BLL/bin/
+SaleSystem.BLL/obj/
+
+SaleSystem.DAL/bin/
+SaleSystem.DAL/obj/
+
+SaleSystem.DTO/bin/
+SaleSystem.DTO/obj/
+
+SaleSystem.IOC/bin/
+SaleSystem.IOC/obj/
+
+SaleSystem.Model/bin/
+SaleSystem.Model/obj/
+
+SaleSystem.Utility/bin/
+SaleSystem.Utility/obj/
