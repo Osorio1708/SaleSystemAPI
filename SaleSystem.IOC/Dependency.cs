@@ -15,7 +15,6 @@ namespace SaleSystem.IOC
             {
                 options.UseSqlServer(configuration.GetConnectionString("stringSQL"));
             });
-
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<ISaleRepository, SaleRepository>();
         }
