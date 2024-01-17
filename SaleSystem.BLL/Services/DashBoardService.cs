@@ -46,7 +46,7 @@ namespace SaleSystem.BLL.Services
                 var saleTable = ReturnSales(_saleQuery, -7);
                 result = saleTable.Select(s=>s.Total).Sum(s=>s.Value);
             } 
-            return Convert.ToString(result, new CultureInfo("es-CO"));
+            return Convert.ToString(result, new CultureInfo("en-US"));
         }
 
         private async Task<int> TotalProducts()

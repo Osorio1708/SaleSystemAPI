@@ -54,7 +54,7 @@ namespace SaleSystem.Utility
                 )
                 .ForMember(
                 destiny => destiny.Price, 
-                opt => opt.MapFrom(origin => Convert.ToString(origin.Price, new CultureInfo("es-CO")))
+                opt => opt.MapFrom(origin => Convert.ToString(origin.Price, new CultureInfo("en-US")))
                 )
                 .ForMember(
                 destiny => destiny.IsActive, 
@@ -67,7 +67,7 @@ namespace SaleSystem.Utility
                 )
                 .ForMember(
                 destiny => destiny.Price, 
-                opt => opt.MapFrom(origin => Convert.ToDecimal(origin.Price, new CultureInfo("es-CO")))
+                opt => opt.MapFrom(origin => Convert.ToDecimal(origin.Price, new CultureInfo("en-US")))
                 )
                 .ForMember(
                 destiny => destiny.IsActive, 
@@ -79,7 +79,7 @@ namespace SaleSystem.Utility
             CreateMap<Sale, SaleDTO>()
                 .ForMember(
                 destiny => destiny.Total, 
-                opt => opt.MapFrom(origin => Convert.ToString(origin.Total, new CultureInfo("es-CO")))
+                opt => opt.MapFrom(origin => Convert.ToString(origin.Total, new CultureInfo("en-us")))
                 )
                 .ForMember(
                 destiny => destiny.RegistrationDate, 
@@ -88,7 +88,7 @@ namespace SaleSystem.Utility
             CreateMap<SaleDTO, Sale>()
                 .ForMember(
                 destiny => destiny.Total, 
-                opt => opt.MapFrom(origin => Convert.ToDecimal(origin.Total, new CultureInfo("es-CO")))
+                opt => opt.MapFrom(origin => Convert.ToDecimal(origin.Total, new CultureInfo("en-US")))
                 );
             #endregion Sale
 
@@ -100,20 +100,20 @@ namespace SaleSystem.Utility
                 )
                 .ForMember(
                 destiny => destiny.Price,
-                opt => opt.MapFrom(origin => Convert.ToString(origin.Price, new CultureInfo("es-CO")))
+                opt => opt.MapFrom(origin => Convert.ToString(origin.Price, new CultureInfo("en-US")))
                 )
                 .ForMember(
                 destiny => destiny.Total,
-                opt => opt.MapFrom(origin => Convert.ToString(origin.Total, new CultureInfo("es-CO")))
+                opt => opt.MapFrom(origin => Convert.ToString(origin.Total, new CultureInfo("en-US")))
                 );
             CreateMap<SaleDetailDTO, SaleDetail>()
                 .ForMember(
                 destiny => destiny.Price,
-                opt => opt.MapFrom(origin => Convert.ToDecimal(origin.Price, new CultureInfo("es-CO")))
+                opt => opt.MapFrom(origin => Convert.ToDecimal(origin.Price, new CultureInfo("en-US")))
                 )
                 .ForMember(
                 destiny => destiny.Total,
-                opt => opt.MapFrom(origin => Convert.ToDecimal(origin.Total, new CultureInfo("es-CO")))
+                opt => opt.MapFrom(origin => Convert.ToDecimal(origin.Total, new CultureInfo("en-US")))
                 );
             #endregion SaleDetail
 
@@ -133,7 +133,7 @@ namespace SaleSystem.Utility
                 )
                 .ForMember(
                 destiny => destiny.TotalSale,
-                opt => opt.MapFrom(origin => Convert.ToString(origin.IdSaleNavigation.Total.Value, new CultureInfo("es-CO")))
+                opt => opt.MapFrom(origin => Convert.ToString(origin.IdSaleNavigation.Total.Value, new CultureInfo("en-US")))
                 )
                 .ForMember(
                 destiny => destiny.Product,
@@ -141,11 +141,11 @@ namespace SaleSystem.Utility
                 )
                 .ForMember(
                 destiny => destiny.Price,
-                opt => opt.MapFrom(origin => Convert.ToString(origin.Price.Value, new CultureInfo("es-CO")))
+                opt => opt.MapFrom(origin => Convert.ToString(origin.Price.Value, new CultureInfo("en-US")))
                 )
                 .ForMember(
                 destiny => destiny.Total,
-                opt => opt.MapFrom(origin => Convert.ToString(origin.Total.Value, new CultureInfo("es-CO")))
+                opt => opt.MapFrom(origin => Convert.ToString(origin.Total.Value, new CultureInfo("en-US")))
                 );
             #endregion Report
 

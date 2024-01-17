@@ -34,8 +34,8 @@ namespace SaleSystem.BLL.Services
             {
                 if(findFor == "date")
                 {
-                    DateTime formatedInitDate = DateTime.ParseExact(initDate, "dd/MM/yyyy", new CultureInfo("es-CO"));
-                    DateTime formatedEndDate = DateTime.ParseExact(endDate, "dd/MM/yyyy", new CultureInfo("es-CO"));
+                    DateTime formatedInitDate = DateTime.ParseExact(initDate, "dd/MM/yyyy", new CultureInfo("en-US"));
+                    DateTime formatedEndDate = DateTime.ParseExact(endDate, "dd/MM/yyyy", new CultureInfo("en-US"));
                     resultList = await query
                         .Where(
                             s =>
@@ -96,8 +96,8 @@ namespace SaleSystem.BLL.Services
             var resultList = new List<SaleDetail>();
             try
             {
-                DateTime formatedInitDate = DateTime.ParseExact(initDate, "dd/MM/yyyy", new CultureInfo("es-CO"));
-                DateTime formatedEndDate = DateTime.ParseExact(endDate, "dd/MM/yyyy", new CultureInfo("es-CO"));
+                DateTime formatedInitDate = DateTime.ParseExact(initDate, "dd/MM/yyyy", new CultureInfo("en-US"));
+                DateTime formatedEndDate = DateTime.ParseExact(endDate, "dd/MM/yyyy", new CultureInfo("en-US"));
                 resultList = await query
                     .Include(p=>p.IdProductNavigation)
                     .Include(s=>s.IdSaleNavigation)
